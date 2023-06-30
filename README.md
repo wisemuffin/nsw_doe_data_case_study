@@ -39,6 +39,7 @@ This will create a new `codespace`, a sandboxed devcontainer with everything you
 ### 1.c Make sure to wait til the codespace is finished setting up.
 
 ![Codespaces setup screen at postCreateCommand](.github/static/codespaces-setup-screen.png)
+![DOE data download example](.github/static/codespaces-setup-screen.png)
 
 After the container is built and connected to, VSCode will run a few clean up commands and then a `postCreateCommand`, a set of commands run after the container is set up. This is where we install our dependencies, such as dbt, the duckdb adapter, and other necessities, as well as run `dbt deps` to install the dbt packages we want to use. That screen will look something like the above. When it's completed it will close and leave you in a fresh terminal prompt. From there you're ready to do some analytics engineering!
 

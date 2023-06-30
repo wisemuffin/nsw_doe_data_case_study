@@ -6,7 +6,7 @@
 	"image": "mcr.microsoft.com/devcontainers/python:1-3.11-bullseye",
 	"features": {
 		"ghcr.io/devcontainers-contrib/features/go-task:1": {},
-		"ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {},
+		"ghcr.io/eitsupi/devcontainer-features/duckdb-cli:1": {"version":"0.7.1"},
 		"ghcr.io/devcontainers/features/node:1": {}
 	},
 
@@ -36,7 +36,8 @@
 			"dorzey.vscode-sqlfluff",
 			"evidence.evidence-vscode",
 			"GitHub.copilot",
-			"GitHub.copilot-labs"
+			"GitHub.copilot-labs",
+			"RandomFractalsInc.duckdb-sql-tools"
 		]
 		}
 	  }

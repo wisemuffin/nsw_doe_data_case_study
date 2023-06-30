@@ -1,5 +1,6 @@
 {
     "python.analysis.typeCheckingMode": "basic",
+    "sqltools.useNodeRuntime": true,
     // "sqlfluff.dialect": "duckdb",
     // "sqlfluff.experimental.format.executeInTerminal": true,
     // "[jinja-sql]": {

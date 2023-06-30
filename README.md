@@ -95,6 +95,10 @@ Several options:
 [Duck db via pandas dataframe](https://duckdb.org/docs/guides/python/import_pandas)
 Loads of other options see [duckdb guides](https://duckdb.org/docs/guides/index)
 
+## Step 4 - Model the data
+
+/workspaces/nsw_doe_data_case_study/database/nsw_doe_data_case_study.duckdb
+
 # Tools included
 
 This template includes additional tools for the other parts of the stack to create a more realistic experience:

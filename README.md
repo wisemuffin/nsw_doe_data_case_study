@@ -99,17 +99,35 @@ Loads of other options see [duckdb guides](https://duckdb.org/docs/guides/index)
 
 ### 4.a Connect to the database
 
-Using the **duckdb CLI** is quick to setup, but we want to do some data modeling based on .sql files stored in **./modelling/**
+Using the **duckdb CLI** is quick to setup, but we want to do some data modelling based on .sql files stored in **./modelling/**
 
-Use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
+First due to a limitation please run this on the command line:
+
+```bash
+task setup_sqltools
+```
+
+Then use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
 
 ![Duckdb sql tools](.github/static/sql-tools-duckdb.png)
+
+And then you can proceed to once again preview the data by clicking:
+
+![Duckdb example select](.github/static/ssql-tools-select.png)
 
 ### 4.b model the data
 
 Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique (dimensional, one big table, ect) you use.
 
+Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
+
+You can run your .sql simply by clicking the run button:
+
+![data modelling example](.github/static/data-modelling-example.png)
+
 ## Step 5 - Analyse the data
+
+Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. We recommend using [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
 
 # Tools included
 

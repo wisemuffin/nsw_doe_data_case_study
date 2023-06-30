@@ -97,7 +97,19 @@ Loads of other options see [duckdb guides](https://duckdb.org/docs/guides/index)
 
 ## Step 4 - Model the data
 
-/workspaces/nsw_doe_data_case_study/database/nsw_doe_data_case_study.duckdb
+### 4.a Connect to the database
+
+Using the **duckdb CLI** is quick to setup, but we want to do some data modeling based on .sql files stored in **./modelling/**
+
+Use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
+
+![Duckdb sql tools](.github/static/sql-tools-duckdb.png)
+
+### 4.b model the data
+
+Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique (dimensional, one big table, ect) you use.
+
+## Step 5 - Analyse the data
 
 # Tools included
 

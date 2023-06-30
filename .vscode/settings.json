@@ -1,6 +1,14 @@
 {
     "python.analysis.typeCheckingMode": "basic",
     "sqltools.useNodeRuntime": true,
+    "sqltools.connections": [
+      {
+        "previewLimit": 50,
+        "driver": "DuckDB",
+        "name": "local",
+        "database": "${workspaceFolder:nsw_doe_data_case_study}/database/nsw_doe_data_case_study.duckdb"
+      }
+    ],
     // "sqlfluff.dialect": "duckdb",
     // "sqlfluff.experimental.format.executeInTerminal": true,
     // "[jinja-sql]": {

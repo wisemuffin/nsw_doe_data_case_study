@@ -28,3 +28,6 @@ tasks:
     cmds:
       - wget https://data.cese.nsw.gov.au/data/dataset/027493b2-33ad-3f5b-8ed9-37cdca2b8650/resource/2ac19870-44f6-443d-a0c3-4c867f04c305/download/master_dataset.csv -O ./data/public_school_nsw_master_dataset.csv
       - duckdb ./database/nsw_doe_data_case_study.duckdb -c "CREATE TABLE public_school_nsw_master_dataset AS SELECT * FROM read_csv_auto('./data/public_school_nsw_master_dataset.csv');"
+  setupsqltools:
+    cmds:
+      - npm i duckdb-async@0.7.1

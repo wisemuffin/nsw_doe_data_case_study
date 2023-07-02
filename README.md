@@ -113,11 +113,11 @@ Then use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.co
 
 And then you can proceed to once again preview the data by clicking:
 
-![Duckdb example select](.github/static/ssql-tools-select.png)
+![Duckdb example select](.github/static/sql-tools-select.png)
 
 ### 4.b model the data
 
-Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique (dimensional, one big table, ect) you use.
+Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique you use (dimensional, one big table, ect).
 
 Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
 
@@ -127,11 +127,32 @@ You can run your .sql simply by clicking the run button:
 
 ## Step 5 - Analyse the data
 
-Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. We recommend using [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
+Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
+
+- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis for more details. Do all your analysis and insights within the notebook.
+- [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./reports for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
+
+Feel free to also bring the data from the data modeling step into any tool you like. Some more examples:
+- Duckdb APIs exist for most languages (R, C++, Rust) and ODBC. See [duckdb apis](https://duckdb.org/docs/api/overview) so feel free to connect to your favourite tool. We are just assessing your ability to communicate your insights.
+- Export data after modeling in duckdb into a csv and bring into excel and do your insights in powerpoint
+- Export data after modeling in duckdb into a csv and bring into powerbi. 
+- **hardest option** Port forward duckdb from the codebase to your local machine and connect to it via your favourite tool.
+
+# Submitting your work
+
+There are two possible senarios for submitting your work:
+
+## Submitting your work - If you all your work is contained in this codespace
+
+TBC
+
+## Submitting your work - If you did your analysis outside of the codespace
+
+If you used tools like powerpoint or powerbi or any other tool outside of the codespace you will need to submit your work via a pull request.
+
+Simply drag any external files into the **./analysis/** folder and commit them to your branch. Then create a pull request and we will review your work.
 
 # Tools included
-
-This template includes additional tools for the other parts of the stack to create a more realistic experience:
 
 - BI reporting built with [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
 
@@ -148,9 +169,12 @@ With Evidence you can:
 To run Evidence, use:
 
 ```shell
-cd reports
-npm run dev
+task evidence
 ```
+
+A popup will appear in your browser with a preview of your report. Or simply click ports and select port 3000:
+
+![Evidence access via port 3000](.github/static/evidence-port-open-browser.png)
 
 See the [Evidence CLI docs](https://docs.evidence.dev/cli) for more details.
 
@@ -164,7 +188,12 @@ You can make changes to the markdown pages in the `reports/pages` folder and see
 - [Evidence.dev Releases](https://github.com/evidence-dev/evidence/releases)
 
 
+# FAQ
 
-## Contributing
+## Duckdb error unable to open database
+
+If you get an error here saying `Error: unable to open database "./database/nsw_doe_data_case_study.duckdb": IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections e.g. if you are connected via the cli please close the connection (ctrl + d). Duckdb doesnt support similatnious connections. This limitation is currently being worked on.
+
+# Contributing
 
 We welcome issues and PRs requesting or adding new features.

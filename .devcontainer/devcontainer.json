@@ -37,7 +37,8 @@
 			"evidence.evidence-vscode",
 			"GitHub.copilot",
 			"GitHub.copilot-labs",
-			"RandomFractalsInc.duckdb-sql-tools"
+			"RandomFractalsInc.duckdb-sql-tools",
+			"ms-toolsai.jupyter"
 		]
 		}
 	  }

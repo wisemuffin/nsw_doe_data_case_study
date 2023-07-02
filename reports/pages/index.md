@@ -30,6 +30,5 @@ select AECG_region, count(*) as cnt_school from public_school_nsw_master_dataset
     data="{public_school_nsw_master_dataset}"
     x="AECG_region"
     y="cnt_school"
-    series="category"
     title="School count by AECG_region"
 />

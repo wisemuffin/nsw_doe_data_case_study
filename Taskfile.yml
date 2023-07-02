@@ -20,11 +20,13 @@ tasks:
     cmds:
       - duckdb ./database/nsw_doe_data_case_study.duckdb
   evidence_setup:
+    desc: ln will create a symlink to the database file in the reports folder
     cmds:
       - cd reports && npm install
+      - ln ./database/nsw_doe_data_case_study.duckdb ./reports/nsw_doe_data_case_study_sym_link.duckdb
   evidence:
     cmds:
-      - cd reports && npm exec evidence dev --host 0.0.0.0 --port 3000
+      - cd reports && npm exec evidence dev -- --host 0.0.0.0 --port 3001
   duckdb_setup:
     cmds:
       - wget https://data.cese.nsw.gov.au/data/dataset/027493b2-33ad-3f5b-8ed9-37cdca2b8650/resource/2ac19870-44f6-443d-a0c3-4c867f04c305/download/master_dataset.csv -O ./data/public_school_nsw_master_dataset.csv

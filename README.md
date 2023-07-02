@@ -1,12 +1,12 @@
 # New South Wales Department of Education (NSW DOE) - Data Case Study 🦘
 
 [![Open in GitHub Codespaces](https://github.com/codespaces/badge.svg)](https://codespaces.new/wisemuffin/nsw_doe_data_case_study?quickstart=1)
-[![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wisemuffin/nsw_doe_data_case_study)
+<!-- [![Open in Gitpod](https://gitpod.io/button/open-in-gitpod.svg)](https://gitpod.io/#https://github.com/wisemuffin/nsw_doe_data_case_study) -->
 
 
 [New South Wales Department of Education (NSW DOE)](https://education.nsw.gov.au/) are looking for humans who are passionate about improving education.
 
-We created this case study for our aspiring data team members to show off some data skills and use some of the data we work with. We recommend beginners use the following steps to open this project right here on GitHub in a Codespace. If you're a little more experienced with devcontainers and want to go faster 🏎️, you can use the Gitpod link above for a quicker startup and deeper feature set.
+We created this case study for our aspiring data team members to show off some data skills and use some of the data we work with. We recommend beginners use the following steps to open this project right here on GitHub in a Codespace.
 
 **We want this case study to be as seamless as possible and take as little of your time as possible.** That’s why we are using github code spaces which instantly sets up the same environment for you.
 
@@ -15,7 +15,7 @@ Find out more about the [NSW Department of Education](https://education.nsw.gov.
 ## What are we testing?
 
 	- Your ability to solve problems
-	- SQL modelling. Its only 2 datasets don’t go crazy. We are not fussed on what data modelling technique (dimensional, one big table, ect)
+	- SQL modelling. Its only 3 datasets don’t go crazy. We are not fussed on what data modelling technique you choose (dimensional, one big table, ect)
 	- Data analysis. Give us your opinions and insights on what you find in the data
 	- Document your work (nothing fancy, a simple README.md file is more than enough)
     - Work with version control (git)
@@ -34,14 +34,14 @@ This will create a new repository exactly like this one, and navigate you there.
 
 ![Create codespace on main](.github/static/open-codespace.gif)
 
-This will create a new `codespace`, a sandboxed devcontainer with everything you need for a dbt project. Once the codespace is finished setting up, you'll be ready to run a `dbt build`.
+This will create a new `codespace`, a sandboxed devcontainer with everything you need for the project.
 
 ### 1.c Make sure to wait til the codespace is finished setting up.
 
 ![Codespaces setup screen at postCreateCommand](.github/static/codespaces-setup-screen.png)
 ![DOE data download example](.github/static/codespaces-setup-screen.png)
 
-After the container is built and connected to, VSCode will run a few clean up commands and then a `postCreateCommand`, a set of commands run after the container is set up. This is where we install our dependencies, such as dbt, the duckdb adapter, and other necessities, as well as run `dbt deps` to install the dbt packages we want to use. That screen will look something like the above. When it's completed it will close and leave you in a fresh terminal prompt. From there you're ready to do some analytics engineering!
+After the container is built and connected to, VSCode will run a few clean up commands and then a `postCreateCommand`, a set of commands run after the container is set up. This is where we install our dependencies, such as pandas, the duckdb adapter, and other necessities. That screen will look something like the above. When it's completed it will close and leave you in a fresh terminal prompt. From there you're ready to do some data analysis!
 
 ## Step 2 - Investigating data already loaded into the database
 
@@ -130,7 +130,7 @@ You can run your .sql simply by clicking the run button:
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
 
 - [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis for more details. Do all your analysis and insights within the notebook.
-- [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./reports for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
+- [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./analysis/analysis-evidence for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
 
 Feel free to also bring the data from the data modeling step into any tool you like. Some more examples:
 - Duckdb APIs exist for most languages (R, C++, Rust) and ODBC. See [duckdb apis](https://duckdb.org/docs/api/overview) so feel free to connect to your favourite tool. We are just assessing your ability to communicate your insights.
@@ -161,7 +161,6 @@ Simply drag any external files into the **./analysis/** folder and commit them t
 With Evidence you can:
 
 - Version control your BI layer
-- Build reports in the same repo as your dbt project
 - Deploy your reports to a static site
 
 #### Running Evidence
@@ -178,7 +177,7 @@ A popup will appear in your browser with a preview of your report. Or simply cli
 
 See the [Evidence CLI docs](https://docs.evidence.dev/cli) for more details.
 
-You can make changes to the markdown pages in the `reports/pages` folder and see the reports update in the browser preview.
+You can make changes to the markdown pages in the `analysis/analysis-evidence/pages` folder and see the reports update in the browser preview.
 
 #### Learning More about Evidence
 

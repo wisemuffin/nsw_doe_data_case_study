@@ -71,7 +71,7 @@ Ontop of the [public_school_nsw_master_dataset](https://data.cese.nsw.gov.au/dat
 
 [2022 Multi age_composite classes](https://data.cese.nsw.gov.au/data/dataset/multi-age-or-composite-classes-in-nsw-government-schools/resource/30dd6e15-2333-427c-9952-9b7a2190ded0)
 
-## 3.b Download the data
+### 3.b Download the data
 
 Feel free to choose to either download the data locally or connect to the APIs to get the data:
 

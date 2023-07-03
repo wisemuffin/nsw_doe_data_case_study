@@ -38,10 +38,11 @@ This will create a new `codespace`, a sandboxed devcontainer with everything you
 
 ### 1.c Make sure to wait til the codespace is finished setting up.
 
-![Codespaces setup screen at postCreateCommand](.github/static/codespaces-setup-screen.png)
-![DOE data download example](.github/static/codespaces-setup-screen.png)
+![Codespaces setup screen at postCreateCommand](.github/static/finishing_setup_codespace.png)
 
-After the container is built and connected to, VSCode will run a few clean up commands and then a `postCreateCommand`, a set of commands run after the container is set up. This is where we install our dependencies, such as pandas, the duckdb adapter, and other necessities. That screen will look something like the above. When it's completed it will close and leave you in a fresh terminal prompt. From there you're ready to do some data analysis!
+After the container is built and connected to, VSCode will run a few clean up commands and then a `postCreateCommand`, a set of commands run after the container is set up. This is where we install our dependencies, such as pandas, the duckdb adapter, and other necessities. That screen will look something like the above. When it's completed it will close and leave you in a fresh terminal prompt (like below). From there you're ready to do some data analysis!
+
+![DOE data download example](.github/static/finishing_setup_codespace_end.png)
 
 ## Step 2 - Investigating data already loaded into the database
 
@@ -57,6 +58,8 @@ select * from public_school_nsw_master_dataset;
 ```
 DuckDB primarily uses the SQL standard. For some examples see [duckdb sql](https://duckdb.org/docs/sql/introduction).
 **when using the CLI** you need to include a semi colon `;` at the end of each statement.
+
+To exit the `duckdb cli` simply type `ctrl + d`.
 
 ## Step 3 - Ingest data
 
@@ -101,13 +104,7 @@ Several options:
 
 Using the **duckdb CLI** is quick to setup, but we want to do some data modelling based on .sql files stored in **./modelling/**
 
-First due to a limitation please run this on the command line:
-
-```bash
-task setup_sqltools
-```
-
-Then use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
+Use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
 
 ![Duckdb sql tools](.github/static/sql-tools-duckdb.png)
 

@@ -91,9 +91,9 @@ Feel free to choose to either download the data locally or connect to the APIs t
 ### 3.c Ingest the data
 Several options:
 
-[Duckdb csv import method](https://duckdb.org/docs/guides/import/csv_import)
-[Duck db via pandas dataframe](https://duckdb.org/docs/guides/python/import_pandas)
-Loads of other options see [duckdb guides](https://duckdb.org/docs/guides/index)
+- [Duckdb csv import method](https://duckdb.org/docs/guides/import/csv_import)
+- [Duck db via pandas dataframe](https://duckdb.org/docs/guides/python/import_pandas)
+- Loads of other options see [duckdb guides](https://duckdb.org/docs/guides/index)
 
 ## Step 4 - Model the data
 
@@ -129,7 +129,7 @@ You can run your .sql simply by clicking the run button:
 
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
 
-- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis for more details. Do all your analysis and insights within the notebook.
+- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis/analysis-jupyter for more details. Do all your analysis and insights within the notebook.
 - [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./analysis/analysis-evidence for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
 
 Feel free to also bring the data from the data modeling step into any tool you like. Some more examples:
@@ -144,13 +144,17 @@ There are two possible senarios for submitting your work:
 
 ## Submitting your work - If you all your work is contained in this codespace
 
-TBC
+Make sure all you work is committed and pushed to your coppied repo.
+
+Make sure the repo is public and send us the link to your repo.
 
 ## Submitting your work - If you did your analysis outside of the codespace
 
-If you used tools like powerpoint or powerbi or any other tool outside of the codespace you will need to submit your work via a pull request.
+Simply drag any external files into the **./analysis/** folder and commit them to your repo. If you have any issues then feel free to attach the files and send to us.
 
-Simply drag any external files into the **./analysis/** folder and commit them to your branch. Then create a pull request and we will review your work.
+Make sure all you work is committed and pushed to your coppied repo.
+
+Make sure the repo is public and send us the link to your repo.
 
 # Tools included
 

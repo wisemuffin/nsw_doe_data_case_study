@@ -120,7 +120,7 @@ select * from example_model;
 
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
 
-- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis/analysis-jupyter for more details. Do all your analysis and insights within the notebook.
+- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis/analysis-jupyter for more details. Do all your analysis and insights within the notebook. Select the python 3.11 kernel when prompted. Any additional libraries you add to the environment please add them to ./requirements.txt so we can also use them when viewing your work.
 - [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./analysis/analysis-evidence for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
 
 Feel free to also bring the data from the data modellingg step into any tool you like. Some more examples:

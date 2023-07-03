@@ -100,20 +100,6 @@ Several options:
 
 ## Step 4 - Model the data
 
-### 4.a Connect to the database
-
-Using the **duckdb CLI** is quick to setup, but we want to do some data modelling based on .sql files stored in **./modelling/**
-
-Use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
-
-![Duckdb sql tools](.github/static/sql-tools-duckdb.png)
-
-And then you can proceed to once again preview the data by clicking:
-
-![Duckdb example select](.github/static/sql-tools-select.png)
-
-### 4.b model the data
-
 Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique you use (dimensional, one big table, ect).
 
 Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
@@ -163,7 +149,7 @@ Make sure the repo is public and send us the link to your repo.
 
 # Tools included
 
-- SQLTools Duckdb - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more.
+- [SQLTools Duckdb](https://github.com/RandomFractals/duckdb-sql-tools) - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more. We can use the duckdb driver to connect to our duckdb database as an alternative to the CLI.
 - BI reporting built with [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
 
 ### SQLTools Duckdb
@@ -172,7 +158,19 @@ You can run your .sql simply by clicking the run button:
 
 ![data modelling example](.github/static/data-modelling-example.png)
 
-**Limitation**
+#### Connect to the database
+
+Using the **duckdb CLI** is quick to setup, but we want to do some data modelling based on .sql files stored in **./modelling/**
+
+Use the [Duckd DB SQL tools extentions](https://marketplace.visualstudio.com/items?itemName=RandomFractalsInc.duckdb-sql-tools) simply click the extension icon (connection is already setup, you are welcome!):
+
+![Duckdb sql tools](.github/static/sql-tools-duckdb.png)
+
+And then you can proceed to once again preview the data by clicking:
+
+![Duckdb example select](.github/static/sql-tools-select.png)
+
+#### Limitation
 
 sqltools duckdb only provides write (create, update, delete) to pro licences see section on [SQLTools DuckDB Read Only](https://github.com/RandomFractals/duckdb-sql-tools). This project just uses the free Read-only version. 
 

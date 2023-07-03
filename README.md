@@ -118,7 +118,7 @@ Perform any cleaning and modelling you think is necessary. We are not fussed on 
 
 Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
 
-Simply run `task duck` to get into the duckdb cli and then run your sql. Then you can execute sql via:
+Simply run `task duck` to get into the duckdb cli and then run your sql via:
 
 ```duckdb cli
 .read modelling/example_model.sql

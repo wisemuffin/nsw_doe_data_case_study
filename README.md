@@ -118,9 +118,17 @@ Perform any cleaning and modelling you think is necessary. We are not fussed on 
 
 Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
 
-You can run your .sql simply by clicking the run button:
+Simply run `task duck` to get into the duckdb cli and then run your sql. Then you can execute sql via:
 
-![data modelling example](.github/static/data-modelling-example.png)
+```duckdb cli
+.read modelling/example_model.sql
+```
+
+check out the new model:
+
+```duckdb cli
+select * from example_model;
+```
 
 ## Step 5 - Analyse the data
 
@@ -129,10 +137,10 @@ Now the fun part! We want you to analyse the data and provide us with some insig
 - [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis/analysis-jupyter for more details. Do all your analysis and insights within the notebook.
 - [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./analysis/analysis-evidence for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
 
-Feel free to also bring the data from the data modeling step into any tool you like. Some more examples:
+Feel free to also bring the data from the data modellingg step into any tool you like. Some more examples:
 - Duckdb APIs exist for most languages (R, C++, Rust) and ODBC. See [duckdb apis](https://duckdb.org/docs/api/overview) so feel free to connect to your favourite tool. We are just assessing your ability to communicate your insights.
-- Export data after modeling in duckdb into a csv and bring into excel and do your insights in powerpoint
-- Export data after modeling in duckdb into a csv and bring into powerbi. 
+- Export data after modelling in duckdb into a csv and bring into excel and do your insights in powerpoint
+- Export data after modelling in duckdb into a csv and bring into powerbi. 
 - **hardest option** Port forward duckdb from the codebase to your local machine and connect to it via your favourite tool.
 
 # Submitting your work
@@ -155,7 +163,20 @@ Make sure the repo is public and send us the link to your repo.
 
 # Tools included
 
+- SQLTools Duckdb - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more.
 - BI reporting built with [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
+
+### SQLTools Duckdb
+
+You can run your .sql simply by clicking the run button:
+
+![data modelling example](.github/static/data-modelling-example.png)
+
+**Limitation**
+
+sqltools duckdb only provides write (create, update, delete) to pro licences see section on [SQLTools DuckDB Read Only](https://github.com/RandomFractals/duckdb-sql-tools). This project just uses the free Read-only version. 
+
+So only advisable if you want to pay for the pro version.
 
 ### Evidence
 

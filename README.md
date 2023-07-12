@@ -12,6 +12,26 @@ We created this case study for our aspiring data team members to show off some d
 
 Find out more about the [NSW Department of Education](https://education.nsw.gov.au/)
 
+
+# The Case Study
+
+## Background
+
+You will get data sets from the [NSW Department of Education](https://education.nsw.gov.au/). We want you to ingest the data into a database, model the data and then analyse the data to provide us with some insights.
+
+The data sets include (more info below):
+- Attendance
+- Multi-age composite classes (classes are made up of students drawn from different year levels)
+- Resource Allocation Model (RAM)
+
+## Your Task
+
+Multi-age classes may benefit students both socially and emotionally. NSW consistently performs above the national average in NAPLAN testing.
+
+You have been tasked to bring some data into the data warehouse (duckdb) and provide some analysis into:
+
+**Does multi age composite classes have an impact on attendance rates?**
+
 ## What are we testing?
 
 	- Your ability to solve problems
@@ -19,8 +39,6 @@ Find out more about the [NSW Department of Education](https://education.nsw.gov.
 	- Data analysis. Give us your opinions and insights on what you find in the data
 	- Document your work (nothing fancy, a simple README.md file is more than enough)
     - Work with version control (git)
-
-# The Case Study
 
 ## Step 1 - Setup the case study environment
 
@@ -69,7 +87,7 @@ Ontop of the [public_school_nsw_master_dataset](https://data.cese.nsw.gov.au/dat
 
 [2022 Attendance rates by Government Schools](https://data.cese.nsw.gov.au/data/dataset/student-attendance-rate-by-school/resource/0f88215b-b838-4357-a264-6b83120065ba)
 
-[2022 Multi age_composite classes](https://data.cese.nsw.gov.au/data/dataset/multi-age-or-composite-classes-in-nsw-government-schools/resource/30dd6e15-2333-427c-9952-9b7a2190ded0)
+[2022 Multi age_composite classes)](https://data.cese.nsw.gov.au/data/dataset/multi-age-or-composite-classes-in-nsw-government-schools/resource/30dd6e15-2333-427c-9952-9b7a2190ded0) (hint this data needs some pivoting (columns for each year))
 
 ### 3.b Download the data
 

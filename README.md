@@ -151,7 +151,7 @@ Feel free to also bring the data from the data modellingg step into any tool you
 
 There are two possible senarios for submitting your work:
 
-## Submitting your work - If you all your work is contained in this codespace
+## Submitting your work - If all your work is contained in this codespace
 
 Make sure all you work is committed and pushed to your coppied repo.
 

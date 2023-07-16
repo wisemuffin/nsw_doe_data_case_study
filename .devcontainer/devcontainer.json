@@ -43,10 +43,7 @@
 			"GitHub.copilot-labs",
 			"RandomFractalsInc.duckdb-sql-tools",
 			"ms-toolsai.jupyter",
-			"Evidence.evidence-vscode",
-			"innoverio.vscode-dbt-power-user",
-			"bastienboutonnet.vscode-dbt",
-			"eamodio.gitlens"
+			"Evidence.evidence-vscode"
 		]
 		}
 	  }

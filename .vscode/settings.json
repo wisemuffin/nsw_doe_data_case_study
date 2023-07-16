@@ -9,6 +9,8 @@
         "database": "./database/nsw_doe_data_case_study.duckdb"
       }
     ],
+    "dbt.queryLimit": 100,
+    "dbt.profilesDirOverride": ".",
     // "sqlfluff.dialect": "duckdb",
     // "sqlfluff.experimental.format.executeInTerminal": true,
     // "[jinja-sql]": {

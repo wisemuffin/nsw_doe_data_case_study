@@ -6,7 +6,7 @@
 
 [New South Wales Department of Education (NSW DOE)](https://education.nsw.gov.au/) are looking for humans who are passionate about improving education.
 
-We created this case study for our aspiring data team members to show off some data skills and use some of the data we work with. We recommend beginners use the following steps to open this project right here on GitHub in a Codespace.
+We created this case study for our aspiring data team members to show off some data skills and use some of the data we work with.
 
 **We want this case study to be as seamless as possible and take as little of your time as possible.** That’s why we are using github code spaces which instantly sets up the same environment for you.
 
@@ -22,7 +22,7 @@ You will get data sets from the [NSW Department of Education](https://education.
 The data sets include (more info below):
 - Attendance
 - Multi-age composite classes (classes are made up of students drawn from different year levels)
-- Resource Allocation Model (RAM)
+- School properties
 
 ## Your Task
 

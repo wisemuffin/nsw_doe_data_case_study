@@ -152,6 +152,8 @@ task sql
 
 Check out the docs at [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) for more details.
 
+**If you get an error here saying `Error: unable to open database please close the CLI version first!**
+
 ## Step 5 - Analyse the data
 
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:

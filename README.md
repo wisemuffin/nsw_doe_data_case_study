@@ -134,6 +134,19 @@ check out the new model:
 select * from example_model;
 ```
 
+### SQL editor (optional)
+
+If you rather use a SQL IDE rather than duckdb's CLI we have also provided you with [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) 
+
+To open the harlequin sql editor simply run:
+```bash
+task sql
+```
+
+![DOE data download example](.github/static/harlequin_cli_sql_editor.PNG)
+
+Check out the docs at [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) for more details.
+
 ## Step 5 - Analyse the data
 
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
@@ -167,10 +180,17 @@ Make sure the repo is public and send us the link to your repo.
 
 # Tools included
 
-- [SQLTools Duckdb](https://github.com/RandomFractals/duckdb-sql-tools) - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more. We can use the duckdb driver to connect to our duckdb database as an alternative to the CLI.
+- [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) SQL IDE in a CLI for duck db. Simply run `task sql` to open the sql editor.
+<!-- - [SQLTools Duckdb](https://github.com/RandomFractals/duckdb-sql-tools) - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more. We can use the duckdb driver to connect to our duckdb database as an alternative to the CLI. -->
 - BI reporting built with [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
 
-### SQLTools Duckdb
+### Harlequin
+SQL IDE for duckdb
+[Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) SQL IDE in a CLI for duck db. Simply run `task sql` to open the sql editor.
+
+![DOE data download example](.github/static/harlequin_cli_sql_editor.PNG)
+
+<!-- ### SQLTools Duckdb
 
 You can run your .sql simply by clicking the run button:
 
@@ -192,7 +212,10 @@ And then you can proceed to once again preview the data by clicking:
 
 sqltools duckdb only provides write (create, update, delete) to pro licences see section on [SQLTools DuckDB Read Only](https://github.com/RandomFractals/duckdb-sql-tools). This project just uses the free Read-only version. 
 
-So only advisable if you want to pay for the pro version.
+So only advisable if you want to pay for the pro version. 
+
+Also can only use up till 0.7.1 (which doesnt cover duckdbs unpivot)
+-->
 
 ### Evidence
 

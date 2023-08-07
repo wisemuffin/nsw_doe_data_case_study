@@ -34,3 +34,6 @@ tasks:
   setup_sqltools:
     cmds:
       - cd ~/.local/share/vscode-sqltools && npm install duckdb-async@0.7.1 && exit 0
+  sql:
+    cmds:
+      - harlequin "database/nsw_doe_data_case_study.duckdb"

@@ -1,4 +1,5 @@
 pandas==2.0.3
-duckdb==0.7.1
+duckdb==0.8.1
 ydata-profiling==4.3.1
 ipywidgets==8.0.6
+harlequin==0.0.21

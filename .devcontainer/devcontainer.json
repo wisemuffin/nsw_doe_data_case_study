@@ -38,10 +38,10 @@
 			"ms-python.vscode-pylance",
 			"ms-python.black-formatter",
 			"ms-python.isort",
-			"dorzey.vscode-sqlfluff",
+			// "dorzey.vscode-sqlfluff",
 			"GitHub.copilot",
 			"GitHub.copilot-labs",
-			"RandomFractalsInc.duckdb-sql-tools",
+			// "RandomFractalsInc.duckdb-sql-tools",
 			"ms-toolsai.jupyter",
 			"Evidence.evidence-vscode",
 			"eamodio.gitlens"

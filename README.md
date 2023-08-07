@@ -134,7 +134,12 @@ check out the new model:
 select * from example_model;
 ```
 
-### SQL editor (optional)
+### Hints
+
+- the grain of the analysis is at the school level
+- one of the data sets will need to be [unpivoted](https://duckdb.org/docs/sql/statements/unpivot.html#:~:text=Unpivot%20Statement%20%2D%20DuckDB&text=The%20UNPIVOT%20statement%20allows%20multiple,value%20from%20the%20source%20column).)
+
+### SQL editor by IDE (optional)
 
 If you rather use a SQL IDE rather than duckdb's CLI we have also provided you with [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) 
 

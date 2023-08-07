@@ -15,12 +15,12 @@
   "dependencies": {
     "@evidence-dev/core-components": "1.1.0",
     "@evidence-dev/evidence": "19.0.0",
-    "@evidence-dev/duckdb": "0.0.6"
+    "@evidence-dev/duckdb": "0.2.0"
   },
   "overrides": {
     "jsonwebtoken": "9.0.0",
     "trim@<0.0.3": ">0.0.3",
     "sqlite3": "5.1.5",
-    "duckdb-async": "0.7.1"
+    "duckdb-async": "0.8.1"
   }
 }

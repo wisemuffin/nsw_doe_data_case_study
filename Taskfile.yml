@@ -14,7 +14,7 @@ tasks:
       - task deps
       - task git
       - task duckdb_setup
-      - task setup_sqltools
+      # - task setup_sqltools
       - task evidence_setup
   duck:
     cmds:
@@ -33,7 +33,7 @@ tasks:
       - duckdb ./database/nsw_doe_data_case_study.duckdb -c "CREATE TABLE public_school_nsw_master_dataset AS SELECT * FROM read_csv_auto('./data/public_school_nsw_master_dataset.csv');"
   setup_sqltools:
     cmds:
-      - cd ~/.local/share/vscode-sqltools && npm install duckdb-async@0.7.1 && exit 0
+      - cd ~/.local/share/vscode-sqltools && npm install duckdb-async@0.8.1 && exit 0
   sql:
     cmds:
       - harlequin "database/nsw_doe_data_case_study.duckdb"

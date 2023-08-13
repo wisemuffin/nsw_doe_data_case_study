@@ -6,7 +6,8 @@
         "previewLimit": 50,
         "driver": "DuckDB",
         "name": "local",
-        "database": "./database/nsw_doe_data_case_study.duckdb"
+        "database": "./database/nsw_doe_data_case_study.duckdb",
+        "databaseFilePath": "./database/nsw_doe_data_case_study.duckdb",
       }
     ],
     "dbt.queryLimit": 100,

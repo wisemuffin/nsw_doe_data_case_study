@@ -59,7 +59,7 @@ This will create a new `codespace`, a sandboxed devcontainer with everything you
 
 ### 1.c Make sure to wait til the codespace is finished setting up.
 
-** This will take around 2 mins to provision the environment**
+**This will take around 2 mins to provision the environment**
 
 ![Codespaces setup screen at postCreateCommand](.github/static/finishing_setup_codespace.png)
 

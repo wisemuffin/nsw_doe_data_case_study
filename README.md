@@ -42,7 +42,10 @@ You have been tasked to bring some data into the data warehouse (duckdb) and pro
 
 ## Step 1 - Setup the case study environment
 
+
 ### 1.a Click the big green 'Use this template' button and 'Create a new repository'.
+
+**First make sure you have logged into github. You may need to sign up. If you havent logged in the template button wont appear.**
 
 ![Click use template](.github/static/use-template.gif)
 
@@ -55,6 +58,8 @@ This will create a new repository exactly like this one, and navigate you there.
 This will create a new `codespace`, a sandboxed devcontainer with everything you need for the project.
 
 ### 1.c Make sure to wait til the codespace is finished setting up.
+
+** This will take around 2 mins to provision the environment**
 
 ![Codespaces setup screen at postCreateCommand](.github/static/finishing_setup_codespace.png)
 

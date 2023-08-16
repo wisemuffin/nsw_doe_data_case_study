@@ -215,15 +215,15 @@ Make sure the repo is public and send us the link to your repo.
 
 # Tools included
 
-- [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) SQL IDE in a CLI for duck db. Simply run `task sql` to open the sql editor.
+<!-- - [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) SQL IDE in a CLI for duck db. Simply run `task sql` to open the sql editor. -->
 <!-- - [SQLTools Duckdb](https://github.com/RandomFractals/duckdb-sql-tools) - SQLTools is a light weight and cross platform database client tool. It supports MySQL, PostgreSQL, Microsoft SQL Server, Microsoft Azure, Oracle, Amazon Redshift, SQLite, Snowflake, Sybase, SAP Hana, and more. We can use the duckdb driver to connect to our duckdb database as an alternative to the CLI. -->
 - BI reporting built with [Evidence](https://evidence.dev) - an open source, code-based BI tool to write reports with markdown and SQL.
 
-### Harlequin
+<!-- ### Harlequin
 SQL IDE for duckdb
 [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) SQL IDE in a CLI for duck db. Simply run `task sql` to open the sql editor.
 
-![DOE data download example](.github/static/harlequin_cli_sql_editor.PNG)
+![DOE data download example](.github/static/harlequin_cli_sql_editor.PNG) -->
 
 <!-- ### SQLTools Duckdb
 

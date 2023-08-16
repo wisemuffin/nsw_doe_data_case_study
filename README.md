@@ -262,6 +262,10 @@ You can make changes to the markdown pages in the `analysis/analysis-evidence/pa
 
 # FAQ
 
+## Code space is running slow or disconnecting
+If you have an unstable connection or you want to reduce latency between you and the IDE (integrated development environment) you can run VScode locally and it will remotley connect to the code space. This helps solve lots of latency issues.
+![Github code space locally](./github_codespace_open_locally.PNG)
+
 ## Duckdb error unable to open database
 
 If you get an error here saying `Error: unable to open database `./database/nsw_doe_data_case_study.duckdb`: IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections e.g. if you are connected via the cli please close the connection (ctrl + d). Duckdb doesnt support similatnious connections. This limitation is currently being worked on.

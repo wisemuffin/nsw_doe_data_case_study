@@ -66,18 +66,22 @@ After the container is built and connected to, VSCode will run a few clean up co
 
 [public_school_nsw_master_dataset](https://data.cese.nsw.gov.au/data/dataset/nsw-public-schools-master-dataset) has already been loaded into the database which contains NSW public school fields. To run some SQL lets first get into the `duckdb cli` by entering the following into the command line:
 
-```bash
-task duck
-```
-Then lets run some sql via the `duck cli` to quickly review how to issue sql commands via duckdb:
+<!-- -- ```bash
+-- task duck
+-- ```
+-- Then lets run some sql via the `duck cli` to quickly review how to issue sql commands via duckdb:
 
-```sql
-select * from public_school_nsw_master_dataset;
-```
-DuckDB primarily uses the SQL standard. For some examples see [duckdb sql](https://duckdb.org/docs/sql/introduction).
-**when using the CLI** you need to include a semi colon `;` at the end of each statement.
+-- ```sql
+-- select * from public_school_nsw_master_dataset;
+-- ```
+-- DuckDB primarily uses the SQL standard. For some examples see [duckdb sql](https://duckdb.org/docs/sql/introduction).
+-- **when using the CLI** you need to include a semi colon `;` at the end of each statement.
 
-To exit the `duckdb cli` simply type `ctrl + d`.
+-- To exit the `duckdb cli` simply type `ctrl + d`. -->
+
+Have a look at the data by running the following sql with sqltools duckdb driver:
+
+![example of running a query](.github/static/duckdb_sqltools_query_table.PNG)
 
 ## Step 3 - Ingest data
 
@@ -122,6 +126,13 @@ Perform any cleaning and modelling you think is necessary. We are not fussed on 
 
 Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
 
+### Hints
+
+- the grain of the analysis is at the school level
+- one of the data sets will need to be [unpivoted](https://duckdb.org/docs/sql/statements/unpivot.html#:~:text=Unpivot%20Statement%20%2D%20DuckDB&text=The%20UNPIVOT%20statement%20allows%20multiple,value%20from%20the%20source%20column).)
+
+<!-- ### Step 4a - Connect to duckdb via duckdb cli
+
 Simply run `task duck` to get into the duckdb cli and then run your sql via:
 
 ```duckdb cli
@@ -132,14 +143,31 @@ check out the new model:
 
 ```duckdb cli
 select * from example_model;
-```
+``` 
+-->
 
-### Hints
+### Step 4a - Run you sql in duckdb via sqltools
 
-- the grain of the analysis is at the school level
-- one of the data sets will need to be [unpivoted](https://duckdb.org/docs/sql/statements/unpivot.html#:~:text=Unpivot%20Statement%20%2D%20DuckDB&text=The%20UNPIVOT%20statement%20allows%20multiple,value%20from%20the%20source%20column).)
+Here is an example of creating a table with sql tools:
 
-### SQL editor by IDE (optional)
+![example of creating a table](.github/static/duckdb_sqltools_create_table.PNG)
+
+Then you can query tables like we did above:
+
+![example of running a query](.github/static/duckdb_sqltools_query_table.PNG)
+
+Now your turn. Model the data as you see fit before using it for the analysis step coming up next.
+
+
+### Step 4b - disconnect from duckdb via sqltools
+
+Due to a limiation you must disconnect sqltools duckdb connection before running the next analysis steps.
+
+![Disconnect from duckdb via sqltools](.github/static/disconnect_duckdb_sql_tools.PNG)
+
+
+
+<!-- ### SQL editor by IDE (optional)
 
 If you rather use a SQL IDE rather than duckdb's CLI we have also provided you with [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) 
 
@@ -152,7 +180,7 @@ task sql
 
 Check out the docs at [Harlequin](https://duckdb.org/docs/guides/sql_editors/harlequin.html) for more details.
 
-**If you get an error here saying `Error: unable to open database please close the CLI version first!**
+**If you get an error here saying `Error: unable to open database please close the CLI version first!** -->
 
 ## Step 5 - Analyse the data
 
@@ -259,7 +287,14 @@ You can make changes to the markdown pages in the `analysis/analysis-evidence/pa
 
 ## Duckdb error unable to open database
 
-If you get an error here saying `Error: unable to open database "./database/nsw_doe_data_case_study.duckdb": IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections e.g. if you are connected via the cli please close the connection (ctrl + d). Duckdb doesnt support similatnious connections. This limitation is currently being worked on.
+If you get an error here saying `Error: unable to open database "./database/nsw_doe_data_case_study.duckdb": IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections:
+- if you are connected via the cli please close the connection (ctrl + d) 
+- if you havent already yet please disconnect from SQL tools duckdb connection.
+
+![Disconnect from duckdb via sqltools](.github/static/disconnect_duckdb_sql_tools.PNG)
+
+Duckdb when running in memory doesnt support similatnious connections. This limitation is currently being worked on.
+[Click to see more info about this limitation ](https://github.com/evidence-dev/sqltools-duckdb-driver/issues/4)
 
 # Contributing
 

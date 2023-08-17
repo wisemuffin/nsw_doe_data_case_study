@@ -38,13 +38,12 @@
 			"ms-python.vscode-pylance",
 			"ms-python.black-formatter",
 			"ms-python.isort",
-			// "dorzey.vscode-sqlfluff",
 			"GitHub.copilot",
 			"GitHub.copilot-labs",
-			// "RandomFractalsInc.duckdb-sql-tools",
 			"ms-toolsai.jupyter",
 			"Evidence.evidence-vscode",
-			"eamodio.gitlens"
+			"eamodio.gitlens",
+			"Evidence.sqltools-duckdb-driver"
 		]
 		}
 	  }

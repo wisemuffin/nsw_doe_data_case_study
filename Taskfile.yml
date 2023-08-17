@@ -14,7 +14,7 @@ tasks:
       - task deps
       - task git
       - task duckdb_setup
-      # - task setup_sqltools
+      - task setup_sqltools
       - task evidence_setup
   duck:
     cmds:

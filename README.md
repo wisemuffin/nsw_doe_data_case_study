@@ -42,7 +42,10 @@ You have been tasked to bring some data into the data warehouse (duckdb) and pro
 
 ## Step 1 - Setup the case study environment
 
+
 ### 1.a Click the big green 'Use this template' button and 'Create a new repository'.
+
+**First make sure you have logged into github. You may need to sign up. If you havent logged in the template button wont appear.**
 
 ![Click use template](.github/static/use-template.gif)
 
@@ -55,6 +58,8 @@ This will create a new repository exactly like this one, and navigate you there.
 This will create a new `codespace`, a sandboxed devcontainer with everything you need for the project.
 
 ### 1.c Make sure to wait til the codespace is finished setting up.
+
+**This will take around 2 mins to provision the environment**
 
 ![Codespaces setup screen at postCreateCommand](.github/static/finishing_setup_codespace.png)
 
@@ -124,7 +129,7 @@ Several options:
 
 Perform any cleaning and modelling you think is necessary. We are not fussed on what data modelling technique you use (dimensional, one big table, ect).
 
-Simply create your sql transformations as views or tables or just simple queries in the **./modelling/** folder.
+Simply create your sql transformations as views or tables or just simple queries in the `./modelling/` folder.
 
 ### Hints
 
@@ -179,8 +184,8 @@ Check out the docs at [Harlequin](https://duckdb.org/docs/guides/sql_editors/har
 
 Now the fun part! We want you to analyse the data and provide us with some insights. Feel free to use any tool you like. Couple of options that are aleady setup for you:
 
-- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder ./analysis/analysis-jupyter for more details. Do all your analysis and insights within the notebook. Select the python 3.11 kernel when prompted. Any additional libraries you add to the environment please add them to ./requirements.txt so we can also use them when viewing your work.
-- [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder ./analysis/analysis-evidence for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
+- [Jupyer notebooks](https://jupyter.org/) (Python). We have already setup a jupyter notebook for you to use. See folder `./analysis/analysis-jupyter` for more details. Do all your analysis and insights within the notebook. Select the python 3.11 kernel when prompted. Any additional libraries you add to the environment please add them to ./requirements.txt so we can also use them when viewing your work.
+- [Evidence](https://evidence.dev) (Low code option in markdown and SQL) - an open source, code-based BI tool to write reports with markdown and SQL. See folder `./analysis/analysis-evidence` for some examples. Simply do all your analysis and insight call outs in Evidence. For more detail on Evidence please see section on Tools included below.
 
 Feel free to also bring the data from the data modellingg step into any tool you like. Some more examples:
 - Duckdb APIs exist for most languages (R, C++, Rust) and ODBC. See [duckdb apis](https://duckdb.org/docs/api/overview) so feel free to connect to your favourite tool. We are just assessing your ability to communicate your insights.
@@ -278,7 +283,12 @@ You can make changes to the markdown pages in the `analysis/analysis-evidence/pa
 
 # FAQ
 
+## Code space is running slow or disconnecting
+If you have an unstable connection or you want to reduce latency between you and the IDE (integrated development environment) you can run VScode locally and it will remotley connect to the code space. This helps solve lots of latency issues.
+![Github code space locally](./github_codespace_open_locally.PNG)
+
 ## Duckdb error unable to open database
+
 
 If you get an error here saying `Error: unable to open database "./database/nsw_doe_data_case_study.duckdb": IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections:
 - if you are connected via the cli please close the connection (ctrl + d) 
@@ -288,6 +298,7 @@ If you get an error here saying `Error: unable to open database "./database/nsw_
 
 Duckdb when running in memory doesnt support similatnious connections. This limitation is currently being worked on.
 [Click to see more info about this limitation ](https://github.com/evidence-dev/sqltools-duckdb-driver/issues/4)
+
 
 # Contributing
 

@@ -159,13 +159,6 @@ Then you can query tables like we did above:
 Now your turn. Model the data as you see fit before using it for the analysis step coming up next.
 
 
-### Step 4b - disconnect from duckdb via sqltools
-
-Due to a limiation you must disconnect sqltools duckdb connection before running the next analysis steps.
-
-![Disconnect from duckdb via sqltools](.github/static/disconnect_duckdb_sql_tools.PNG)
-
-
 
 <!-- ### SQL editor by IDE (optional)
 
@@ -289,7 +282,7 @@ You can make changes to the markdown pages in the `analysis/analysis-evidence/pa
 
 If you get an error here saying `Error: unable to open database "./database/nsw_doe_data_case_study.duckdb": IO Error: Could not set lock on file "./database/nsw_doe_data_case_study.duckdb": Resource temporarily unavailable` then please close any other duckdb connections:
 - if you are connected via the cli please close the connection (ctrl + d) 
-- if you havent already yet please disconnect from SQL tools duckdb connection.
+- please disconnect from SQL tools duckdb connection.
 
 ![Disconnect from duckdb via sqltools](.github/static/disconnect_duckdb_sql_tools.PNG)
 
